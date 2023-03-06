@@ -1,0 +1,72 @@
+In Python we have lots of built-in functions.
+ Built-in functions are globally available for your use that mean you can make use of the 
+ built-in functions without importing or configuring. Some of the most commonly used Python built-in functions are the following: 
+ print(), len(), type(), int(), float(), str(), input(), list(), dict(),
+  min(), max(), sum(), sorted(), open(), file(), help(), and dir().
+
+  Link : https://docs.python.org/3.9/library/functions.html
+
+  Keywords : Python has many built in keywords(Reserved words and these
+  words cannot be used as a variable to store the data)
+  ex : and , if , else, elif , with , open, expect,finally,close etc 
+
+  variable : Storing a data a in a computer memory location . 
+  a = 10 
+  10 gets stored in a variable 'a' and the memory is allocated to 10 
+  id(10) >> will return the 'id' of the variable
+
+  variable rules :
+ 1. A variable name must start with a letter or the underscore character
+  ex : _name,first_name
+ 2.A variable name cannot start with a number
+ 3.A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9 and _)
+ 4.Variable names are case-sensitive (firstname, Firstname, FirstName and FIRSTNAME) 
+ are different variables)
+
+ ex :
+ firstname
+lastname
+age
+country
+city
+first_name
+last_name
+capital_city
+
+When we assign a certain data type to a variable,it is called variable declaration. 
+ For instance in the example below my first name is assigned to a variable first_name. The equal sign is an assignment operator. Assigning means storing data in the variable. 
+The equal sign in Python is not equality as in Mathematics.
+
+Declaring multiple variables:
+first_name, last_name, country, age, is_programming = 'Linkdin', 'learning', 'python', 2023, True
+
+Getting user input using the input() built-in function.
+ Let us assign the data
+ we get from a user into first_name and age variables. Example:
+name = input("Enter your name:")
+age = input("Enter your age:")
+
+Data types:
+A data type is the classifiaction of the type of the values that can 
+be assigned to variables.
+In python we have different data types and we don't need to explicitly 
+declare the type of the data internally python take cares of that which data type 
+one variable is storing.
+
+Mutable data types : Once we assign the value to a variable we can change the value or the data 
+Immutable : Once the value is assigned we cannot change 
+
+Type :
+We can check the type of the data using type built in function:
+type('linkdin') : string 
+type(5) : int
+type(5.5) : float
+
+Casting : 
+In python we have an option called type casting where we can convert the data type 
+from one to  other . For ex if we want to concatenate a number with a str 
+it throws an error first we have to convert an integer to string and then
+we can concatenate 
+
+1+'python' : throws an error 
+str(1) + 'python' : '1python'
