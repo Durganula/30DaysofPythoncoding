@@ -1,0 +1,29 @@
+"Python"is a widely used general-purpose, high level programming language.
+ It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers 
+ to express their concepts in fewer lines of code.
+
+ What is an Interpreter?
+ >> A python interpreter is a computer program that converts each high-level program statement into machine code(0 and 1). An interpreter translates the command that you write out into code that the computer can understand.
+
+ >> Computer programmers write in high-level programming languages. High-level languages are written closer to human language and allow programmers to focus on the command being written. Python is the most famous example of a high-level language.
+
+>> However, while high-level languages are relatively easy to understand by humans, the same cannot be said for machines. Machines only understand machine code or machine language, a language represented by strings of bits — 1s and 0s.
+
+>> As you can imagine, writing and reading a program as strings of 1s and 0s is extremely hard for human programmers. Imagine trying to memorize instructions as 1s and 0s!
+
+ >> So how do we bridge the gap between what a human programmer writes and what the machine understands and thus executes? By using an interpreter.
+
+>> When using a Python interpreter, the programmer types in the command, the interpreter reads the command, evaluates it, prints the results, and then goes back to read the command.
+  
+  '''' Python is an interpreter language"
+
+2) Difference b/w interpreter and compiler? 
+
+>> Computer programs are generally written in a high-level language, also called source code. Since machines don’t understand this type of language, the language needs to be transformed into binary or machine code, which machines understand.
+
+>> Compilers and interpreters make this transformation possible. However, while they both have the primary function of changing source code into machine code, there are differences between them.
+
+These two remarkable tools significantly differ in how they translate the source code.
+
+>> Interpreters translate source code one statement at a time. On the other hand, the compiler first scans the entire program and then translates the whole program into machine code.
+

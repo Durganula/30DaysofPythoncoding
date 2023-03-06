@@ -1,0 +1,24 @@
+>> How does interpreter works in python ?
+The Python interpreter is CPython and is written in the C programming language. 
+So how does CPython work?
+
+1. First, the interpreter checks or analyzes the source code. 
+By now, we assume you know what the source code means.
+ It’s the high-level language you write programs in.
+
+2.So, CPython receives the source code and initializes several commands to do some vital things.
+
+First, the interpreter ensures you follow Python’s syntax for writing code.
+
+It also checks for incorrect lines of code. If it encounters any error in a line, it stops the program from running and produces an error message.
+
+This analysis divides the source code files into a list of tokens.
+
+3. Then interpreter generates a byte code which can be stored in .pyc extension
+
+4. Next interpreter initializes a python virtual machine which converts byte code
+in to a machine code (binary code)
+
+Python installation:
+https://www.python.org/
+
