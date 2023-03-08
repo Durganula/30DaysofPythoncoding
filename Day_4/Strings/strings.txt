@@ -1,0 +1,281 @@
+# What are strings ?
+
+1.strings are nothing but a set of character it is one data type n python to store the characters
+
+string = "Python"
+
+2.Strings can be declared in a single quote,double and triple quotes.
+' '," ",''' '''
+
+# Creating a string 
+
+letter = 'P'                # A string could be a single character or a bunch of texts
+print(letter)               # P
+print(len(letter))          # 1
+greeting = 'Hello, World!'  # String could be made using a single or double quote,"Hello, World!"
+print(greeting)             # Hello, World!
+print(len(greeting))        # 13
+sentence = "I hope you are enjoying 30 days of Python Challenge"
+print(sentence)
+
+Multiline string is created by using triple single (''') 
+or triple double quotes ("""). See the example below.
+
+multiline_string = '''I am a teacher and enjoy teaching.
+I didn't find anything as rewarding as empowering people.'''
+print(multiline_string)
+
+In strings we have different methods but before going to that lets talk about 
+string slicing and ranging 
+
+var = 'python"
+
+## range : sequence of characters started by 0 with default
+ex :
+var[0] : P
+var[2] : talk
+
+## slicing : For accessing part of the string we go with the slicing 
+
+var[0:4] : pytho
+
+var[-1] : 'n' #negative indexing(last character of the string)
+
+var[::-1] : nohtyp # reverse of a string 
+
+## String concatenation:
+
+merging two strings is called concatenation
+
+first_name = "Durga"
+last_name = "Nula"
+
+final = first_name + ' ' + last_name
+print(final)
+
+## length of a string : checks how many characters are there in a string 
+
+len(first_name) : returns an integer how many characters are there in a string
+
+## Escape Sequences in Strings
+In Python and other programming languages \ followed by a character is an escape sequence. Let us see the most common escape characters:
+
+\n: new line
+\t: Tab means(8 spaces)
+\\: Back slash
+\': Single quote (')
+\": Double quote (")
+Now, let us see the use of the above escape sequences with examples.
+
+print('I hope everyone is enjoying the Python Challenge.\nAre you ?') # line break
+print('Days\tTopics\tExercises') # adding tab space or 4 spaces 
+print('Day 1\t3\t5')
+print('Day 2\t3\t5')
+print('Day 3\t3\t5')
+print('Day 4\t3\t5')
+print('This is a backslash  symbol (\\)') # To write a backslash
+print('In every programming language it starts with \"Hello, World!\"') # to write a double quote ins
+
+## String formatting :
+'%' is used to perform string formatting
+
+first_name = 'python'
+last_name ='programming'
+
+print("%s is a %s language"%(first_name,last_name)) # 'python is a programming language'
+
+first_name = 'python'
+age = 26
+
+print('%s is a programming language and age is %d'%(first_name,age))
+
+## New Style String Formatting (str.format)
+This formatting is introduced in Python version 3.
+
+first_name = 'Python'
+language = 'Python'
+formated_string = 'I am {} . I teach {}'.format(first_name, language)
+print(formated_string)
+
+## Unpacking Characters
+language = 'Python'
+a,b,c,d,e,f = language # unpacking sequence characters into variables
+print(a) # P
+print(b) # y
+print(c) # t
+print(d) # h
+print(e) # n programming counting starts from zero. Therefore the first letter of a string is at zero index and the last letter of a string is the length of a string minus one.
+
+## String index:
+
+language = 'Python'
+first_letter = language[0]
+print(first_letter) # P
+second_letter = language[1]
+print(second_letter) # y
+last_index = len(language) - 1
+last_letter = language[last_index]
+print(last_letter) # no
+print(f) # n
+
+## Skipping Characters While Slicing
+It is possible to skip characters while slicing by passing step argument to slice method.
+
+language = 'Python'
+pto = language[0:6:2] #using step method 
+print(pto) # Pto
+
+## capitalize: Converts first character of a string in to capital letter
+
+challenge = 'thirty days of python'
+print(challenge.capitalize()) # 'Thirty days of python'
+
+## count(): returns occurrences of substring in string,
+count(substring, start=.., end=..).
+The start is a starting indexing for counting and
+end is the last index to count.
+
+var = "Python is a programming"
+var.count('py') #1
+var.count('on',5,10) #1
+
+## endswith(): Checks if a string ends with a specified ending
+
+challenge = 'thirty days of python'
+print(challenge.endswith('on'))   # True
+print(challenge.endswith('tion')) # False
+
+## expandtabs(): Replaces tab character with spaces,
+ default tab size is 8. It takes tab size argument
+
+challenge = 'thirty\tdays\tof\tpython'
+print(challenge.expandtabs())   # 'thirty  days    of      python'
+print(challenge.expandtabs(10)) # 'thirty    days      of        python'
+
+
+## find(): Returns the index of the first occurrence of a substring, 
+if not found returns -1
+
+challenge = 'thirty days of python'
+print(challenge.find('y'))  # 16
+print(challenge.find('th')) # 17
+print(challenge.find('z') # -1 ## retruns -1 if the character is not there in string 
+
+## rfind(): Returns the index of the last occurrence of a substring,
+ if not found returns -1
+
+challenge = 'thirty days of python'
+print(challenge.rfind('y'))  # 5
+print(challenge.rfind('th')) # 1
+
+## index(): Returns the lowest index of a substring, additional arguments indicate starting and ending index (default 0 and string length - 1). If the substring is not found it raises a valueError.
+challenge = 'thirty days of python'
+sub_string = 'da'
+print(challenge.index(sub_string))  # 7
+print(challenge.index(sub_string, 9)) # error
+
+## isalnum(): Checks alphanumeric character
+challenge = 'ThirtyDaysPython'
+print(challenge.isalnum()) # True
+
+challenge = '30DaysPython'
+print(challenge.isalnum()) # True
+
+challenge = 'thirty days of python'
+print(challenge.isalnum()) # False, space is not an alphanumeric character
+
+challenge = 'thirty days of python 2019'
+print(challenge.isalnum()) # False
+
+## isalpha(): Checks if all string elements are alphabet characters (a-z and A-Z)
+challenge = 'thirty days of python'
+print(challenge.isalpha()) # False, space is once again excluded
+challenge = 'ThirtyDaysPython'
+print(challenge.isalpha()) # True
+num = '123'
+print(num.isalpha())      # False
+
+## isdecimal(): Checks if all characters in a string are decimal (0-9)
+challenge = 'thirty days of python'
+print(challenge.isdecimal())  # False
+challenge = '123'
+print(challenge.isdecimal())  # True
+challenge = '\u00B2'
+print(challenge.isdigit())   # False
+challenge = '12 3'
+print(challenge.isdecimal())  # False, space not allowed
+
+## isdigit(): Checks if all characters in a string are numbers (0-9 and some other unicode characters for numbers)
+challenge = 'Thirty'
+print(challenge.isdigit()) # False
+challenge = '30'
+print(challenge.isdigit())   # True
+challenge = '\u00B2'
+print(challenge.isdigit())   # True
+
+
+## isnumeric(): Checks if all characters in a string are numbers or
+ number related (just like isdigit(), just accepts more symbols)
+ num = '10'
+print(num.isnumeric()) # True
+
+# isidentifier(): Checks for a valid identifier - it checks if a string is a valid variable name
+challenge = '30DaysOfPython'
+print(challenge.isidentifier()) # False, because it starts with a number
+challenge = 'thirty_days_of_python'
+print(challenge.isidentifier()) # True
+
+## islower(): Checks if all alphabet characters in the string are lowercase
+challenge = 'thirty days of python'
+print(challenge.islower()) # True
+challenge = 'Thirty days of python'
+print(challenge.islower()) # False
+
+## isupper(): Checks if all alphabet characters in the string are uppercase
+challenge = 'thirty days of python'
+print(challenge.isupper()) #  False
+challenge = 'THIRTY DAYS OF PYTHON'
+print(challenge.isupper()) # True
+
+## join(): Returns a concatenated string( To convert list to a string we use join method)
+web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
+result = ' '.join(web_tech)
+print(result) # 'HTML CSS JavaScript React'
+
+## split : To convert string to a list
+challenge = 'thirty days of python'
+print(challenge.split()) # ['thirty', 'days', 'of', 'python']
+challenge = 'thirty, days, of, python'
+print(challenge.split(', ')) # ['thirty', 'days', 'of', 'python']
+
+## strip(): Removes all given characters starting 
+from the beginning and end of the string
+
+challenge = 'thirty days of pythoonnn'
+print(challenge.strip('noth')) # 'irty days of py'
+
+## replace(): Replaces substring with a given string
+
+challenge = 'thirty days of python'
+print(challenge.replace('python', 'coding')) # 'thirty days of coding'
+
+# title(): Returns a title cased string
+challenge = 'thirty days of python'
+print(challenge.title()) # Thirty Days Of Python
+
+## swapcase(): Converts all uppercase characters to lowercase and 
+all lowercase characters to uppercase characters
+
+challenge = 'thirty days of python'
+print(challenge.swapcase())   # THIRTY DAYS OF PYTHON
+challenge = 'Thirty Days Of Python'
+print(challenge.swapcase())  # tHIRTY dAYS oF pYTHON
+
+## startswith(): Checks if String Starts with the Specified String
+
+challenge = 'thirty days of python'
+print(challenge.startswith('thirty')) # True
+
+challenge = '30 days of python'
+print(challenge.startswith('thirty')) # False
+

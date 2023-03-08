@@ -1,0 +1,62 @@
+Python language supports several types of operators. 
+In this section, we will focus on few of them.
+
+Arthimetic operators:
+Addition(+)
+subtraction(-)
+Multiplication(*)
+Division(/) : Returns the quotient with floating point 
+Floor Division(//) : Returns the quotient just as an integer
+Modulous Division(%) : Returns the remainder 
+
+Assignment :
+Assignment operators are used to assign values to variables.
+ Let us take = as an example. Equal sign in mathematics shows that 
+ two values are equal, however in Python it means we are storing a value in a certain
+ variable and we call it assignment or a assigning value to a variable. 
+
+ ex :
+  x = 5
+  x+=5 i.e x = x+5
+  x-=5 i.e x = x-5
+
+Comparision operators:
+In programming we compare values, we use comparison operators to compare two values. 
+We check if a value is greater or less or equal to other value
+ ex : 
+
+ ==,>=,<=,>,<
+
+ In Addition to these python uses
+  in,notin,is ,isnot keywords 
+
+is: Returns true if both variables are the same object(x is y)
+is not: Returns true if both variables are not the same object(x is not y)
+in: Returns True if the queried list contains a certain item(x in y)
+not in: Returns True if the queried list doesn't have a certain item(x in y)
+
+ex :
+print('1 is 1', 1 is 1)                   # True - because the data values are the same
+print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
+print('p in python', 'p' in 'python') # True - p found in the string
+
+Logical operators:
+
+and  : Returns true if both the statements are True
+or : Returns true if either of the stattemnet is True 
+not : Reverse the result , Returns False if the o/p is True 
+
+print(3 > 2 and 4 > 3) # True - because both statements are true
+print(3 > 2 and 4 < 3) # False - because the second statement is false
+print(3 < 2 and 4 < 3) # False - because both statements are false
+print('True and True: ', True and True)
+print(3 > 2 or 4 > 3)  # True - because both statements are true
+print(3 > 2 or 4 < 3)  # True - because one of the statements is true
+print(3 < 2 or 4 < 3)  # False - because both statements are false
+print('True or False:', True or False)
+print(not 3 > 2)     # False - because 3 > 2 is true, then not True gives False
+print(not True)      # False - Negation, the not operator turns true to false
+print(not False)     # True
+print(not not True)  # True
+print(not not False) # False
+
